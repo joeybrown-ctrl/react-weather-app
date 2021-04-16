@@ -1,6 +1,7 @@
 import './App.css';
 //importing necessary hooks from react
 import React, { useEffect, useState } from 'react';
+import WeatherCard from './components/Weather';
 
 function App() {
 
@@ -33,8 +34,17 @@ function App() {
   }, [lat, long]);
 
 
+//if data is undefined, it shows up as an empty div. Since fetchData() is an async function, the conditonal check (ternary) within the
+//return statement is requried, as it loads the function after all other functions are done executing.
+
   return (
     <div className="App">
+      {(typeof data.main != 'undefined') ? (
+        <WeatherCard weatherdata={data} />
+      ) : (
+        <div></div>
+      )}
+
     </div>
   );
 }
