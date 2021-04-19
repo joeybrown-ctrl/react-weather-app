@@ -8,8 +8,7 @@ const WeatherCard = ({weatherData}) => {
         <div className="main">
             <p className="header">{weatherData.name}</p>
             <div className="flex">
-                <p className="day">{moment().format('dddd')}</p>
-                <p className="day">{moment().format('LL')}</p>
+                <p className="day">{moment().format('dddd')}, <span>{moment().format('LL')}</span></p>
                 <p className="description">{weatherData.weather[0].main}</p>
             </div>
             
