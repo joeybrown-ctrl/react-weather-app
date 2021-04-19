@@ -2,11 +2,11 @@ import React from 'react';
 import { Card } from 'semantic-ui-react';
 // import './styles.css';
 
-const WeatherCard = ({weatherdata}) => {
+const WeatherCard = ({weatherData}) => {
     return (
     <Card>
         <Card.Content>
-            <Card.Header className="header">{weatherdata.name}</Card.Header>
+            <Card.Header className="header">{weatherData.name}</Card.Header>
         </Card.Content>
     </Card>
     )

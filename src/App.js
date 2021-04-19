@@ -8,7 +8,7 @@ function App() {
   //then I set three states: one for lat, one for long, and one to set the state for data.
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
-  const [data, setData] = useState([]);
+  const [weatherData, setWeatherData] = useState([]);
 
     //lat and long are gotten using navigator.geolocation.
     //setLat and setLong are used to set the states for latitude and longitude.
@@ -24,7 +24,7 @@ function App() {
       await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
       .then(res => res.json())
       .then(result => {
-        setData(result)
+        setWeatherData(result)
         console.log(result);
       });
     }
@@ -39,8 +39,8 @@ function App() {
 
   return (
     <div className="App">
-      {(typeof data.main != 'undefined') ? (
-        <WeatherCard weatherdata={data} />
+      {(typeof weatherData.main != 'undefined') ? (
+        <WeatherCard weatherData={weatherData} />
       ) : (
         <div></div>
       )}
@@ -50,3 +50,4 @@ function App() {
 }
 
 export default App;
+
