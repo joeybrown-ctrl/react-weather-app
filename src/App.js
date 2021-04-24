@@ -1,4 +1,5 @@
 import './App.css';
+//importing necessary styling from Semantic UI
 import 'semantic-ui-css/semantic.min.css'
 import { Dimmer, Loader } from 'semantic-ui-react';
 //importing necessary hooks from react

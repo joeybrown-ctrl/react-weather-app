@@ -45,6 +45,7 @@ This project is deployed to Netlify. Check it out [here](https://vigilant-willia
 * [OpenWeatherMap](https://openweathermap.org/)
 * [Semantic UI](https://react.semantic-ui.com/)
 * [Netlify](https://www.netlify.com/)
+* [Excellent Tutorial](https://www.freecodecamp.org/news/learn-react-by-building-a-weather-app/)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
