@@ -16,7 +16,7 @@ const WeatherCard = ({ weatherData }) => {
                 <Button className="button" inverted color='blue' circular icon='refresh' onClick={refresh} />
             </div>
             <div className="flex">
-                <p className="day">{moment().format('dddd')}, <span>{moment().format('LL')}</span></p>
+                <p className="day">{moment().format('dddd')} <span>{moment().format('LL')}</span></p>
                 <p className="description">{weatherData.weather[0].main}</p>
             </div>
 
